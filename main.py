@@ -13,20 +13,19 @@ def read_file_content(filename):
 
 
 def count_words():
-    text = read_file_content("./story.txt")
-    # [assignment] Add your code here
-    text_list = text.split()
-    dict_count = {}
+      text = read_file_content("./story.txt")
+      # [assignment] Add your code here
+      text_list = text.split()
+      dict_count = {}
 
-    for txt in text_list:
-            if txt not in dict_count:
-               dict_count[txt] = 1
-
-            else:
-               dict_count[txt] = dict_count[txt] + 1
+      for txt in text_list:
+              if txt not in dict_count:
+                 dict_count[txt] = 1
+              else:
+                 dict_count[txt] = dict_count[txt] + 1
           
           
-  return dict_count
+   return dict_count
 
 
 print(count_words())
